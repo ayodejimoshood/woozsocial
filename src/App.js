@@ -28,7 +28,7 @@ import "./App.css";
 import ApolloClient from "apollo-boost";
 import { ApolloProvider } from "react-apollo";
 import Pusher from 'pusher-js';
-
+import Router from './config/route';
 
 import Header from "./components/Header/Header";
 import Posts from "./components/Posts/Posts";

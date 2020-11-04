@@ -5,6 +5,10 @@ import React, { Component, useState } from 'react'
 // import { connect } from 'react-redux'
 // import { logout, logOut } from '../actions/auth'
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faHome } from "@fortawesome/free-solid-svg-icons";
+// import { faHeart-o } from "@fortawesome/free-solid-svg-icons";
+
 import {
     Badge,
     Navbar,
@@ -45,6 +49,7 @@ class CustomNavbar extends React.Component{
                     </Navbar.Brand>
 
                     <Navbar.Collapse>
+                        
                         <Nav className="mx-auto">
                             <InputGroup className="" stylexx={{ width: '250px' }}>
                                 <FormControl
@@ -53,6 +58,19 @@ class CustomNavbar extends React.Component{
                             </InputGroup>
                         </Nav>
                         <>
+                        <Nav className='mr-3'>
+                            <i className='fa fa-home' style={{fontSize: '22px'}}></i>
+                        </Nav>
+                        <Nav className='mr-3'>
+                            <i className='fa fa-location-arrow' style={{fontSize: '22px'}}></i>
+                        </Nav>
+                        <Nav className='mr-3'>
+                            <i className='fa fa-heart-o' style={{fontSize: '22px'}}></i>
+                        </Nav>
+                        {/* <Nav className='mr-3'>
+                            <i className='fa fa-instalod'></i>
+                        </Nav> */}
+                        
                             <Dropdown style={{marginRight: '250px'}} alignRight>
                                 <Dropdown.Toggle
                                     variant="transparent"
