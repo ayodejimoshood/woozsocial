@@ -61,11 +61,12 @@ class App extends Component{
     return (
       <div>
         {/* <Header/> */}
-        <CustomNavbar />
-        <br/>
-        <br/>
+        <Router />
+        {/* <CustomNavbar /> */}
+        {/* <br/>
+        <br/> */}
         {/* <br/> */}
-        <Post/>
+        {/* <Post/> */}
       </div>
       // <div>
       //   <Header />

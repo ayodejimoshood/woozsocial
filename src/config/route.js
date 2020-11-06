@@ -37,7 +37,7 @@ export default function RouterComponent() {
                 />
                 <Router>
                     <Switch>
-                        <AuthLayout exact path="/post" component={Post} />
+                        <AuthLayout exact={true} exact path="/" component={Post} />
                         <AuthLayout exact path="/explore" component={Explore} />
                         {/* <AuthLayout path="/signup" component={SignUp} />
                         <AuthLayout

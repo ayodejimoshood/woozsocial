@@ -17,8 +17,10 @@ class Post extends Component {
       
       // <Container stylex={{ width: '100%' }}>
       <div>
+        <br/>
+        <br/>
         <Stories className='mb-3' />
-        <br />
+        {/* <br /> */}
         <Col lg={12}>
           
           <Row className="justify-content-md-center Wrapper" >
@@ -49,7 +51,6 @@ class Post extends Component {
                   </div>
                   <div className="Post-user">
                     <div className="Post-user-avatar">
-                      {/* <img src={Avatar} alt="Fissycoolz" /> */}
                       <LikeButton className="Post-user-avatar" />
                     </div>
                     <div className="Post-user-nickname">
@@ -59,17 +60,14 @@ class Post extends Component {
                       <i className='fa fa-location-arrow' style={{fontSize: '29px'}}></i>
                     </div>
                   </div>
-                  {/* <div className="Post-caption">
-                    <LikeButton />
-                  </div> */}
                   <div className="Post-caption" style={{marginTop: '-20px'}}>
                     <strong>fissycoolz</strong> Chop me I am your Palliative..... 💛 #justdoit
                   </div>
                   <div>
-                  <InputGroup classNamex="mb-3">
-                    <FormControl style={{height: '50px', borderx: 'none', borderBottom: 'none', borderLeft: 'none', borderRight: 'none'}} aria-describedby="basic-addon1" placeholder='Add a comment...' />
-                    <Button style={{width: '100px', height:'30px', margin: '0', position: "absolute", top: '50%', right:'10px', msTransform: 'translateY(-50%)', transform: 'translateY(-50%)', float: 'right' }} size='sm' variant="primary"> <b>Post</b> </Button>{' '}
-                  </InputGroup>
+                    <InputGroup classNamex="mb-3">
+                      <FormControl style={{height: '50px', borderx: 'none', borderBottom: 'none', borderLeft: 'none', borderRight: 'none'}} aria-describedby="basic-addon1" placeholder='Add a comment...' />
+                      <Button style={{width: '100px', backgroundColor: '#043f7c', border: 'none', height:'30px', margin: '0', position: "absolute", top: '50%', right:'10px', msTransform: 'translateY(-50%)', transform: 'translateY(-50%)', float: 'right' }} size='sm' variant="primary" disabled> <b>Post</b> </Button>{' '}
+                    </InputGroup>
                   </div>
                 </Card.Body>
               </Card>
@@ -90,8 +88,25 @@ class Post extends Component {
                       <img alt="Icon Living" src="https://images.pexels.com/photos/4343180/pexels-photo-4343180.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" />
                     </div>
                   </div>
-                  <div className="Post-caption">
+                  <div className="Post-user">
+                    <div className="Post-user-avatar">
+                      <LikeButton className="Post-user-avatar" />
+                    </div>
+                    <div className="Post-user-nickname">
+                      <i className='fa fa-comment-o' style={{fontSize: '29px'}}></i>
+                    </div>
+                    <div className="Post-user-nickname">
+                      <i className='fa fa-location-arrow' style={{fontSize: '29px'}}></i>
+                    </div>
+                  </div>
+                  <div className="Post-caption" style={{marginTop: '-20px'}}>
                     <strong>fissycoolz</strong> Chop me I am your Palliative..... 💛 #justdoit
+                  </div>
+                  <div>
+                    <InputGroup classNamex="mb-3">
+                      <FormControl style={{height: '50px', borderx: 'none', borderBottom: 'none', borderLeft: 'none', borderRight: 'none'}} aria-describedby="basic-addon1" placeholder='Add a comment...' />
+                      <Button style={{width: '100px', backgroundColor: '#043f7c', border: 'none', height:'30px', margin: '0', position: "absolute", top: '50%', right:'10px', msTransform: 'translateY(-50%)', transform: 'translateY(-50%)', float: 'right' }} size='sm' variant="primary" disabled> <b>Post</b> </Button>{' '}
+                    </InputGroup>
                   </div>
                 </Card.Body>
               </Card>
@@ -112,8 +127,25 @@ class Post extends Component {
                       <img alt="Icon Living" src="https://vod-progressive.akamaized.net/exp=1604245632~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F3294%2F18%2F466470641%2F2070632985.mp4~hmac=27f14a19d12107a90f0abaecd5e6e2ab7b069a18dcf7d8123d8c0674c1a9f04e/vimeo-prod-skyfire-std-us/01/3294/18/466470641/2070632985.mp4?filename=pexels-engin-akyurt-5559904.mp4" />
                     </div>
                   </div>
-                  <div className="Post-caption">
+                  <div className="Post-user">
+                    <div className="Post-user-avatar">
+                      <LikeButton className="Post-user-avatar" />
+                    </div>
+                    <div className="Post-user-nickname">
+                      <i className='fa fa-comment-o' style={{fontSize: '29px'}}></i>
+                    </div>
+                    <div className="Post-user-nickname">
+                      <i className='fa fa-location-arrow' style={{fontSize: '29px'}}></i>
+                    </div>
+                  </div>
+                  <div className="Post-caption" style={{marginTop: '-20px'}}>
                     <strong>fissycoolz</strong> Chop me I am your Palliative..... 💛 #justdoit
+                  </div>
+                  <div>
+                    <InputGroup classNamex="mb-3">
+                      <FormControl style={{height: '50px', borderx: 'none', borderBottom: 'none', borderLeft: 'none', borderRight: 'none'}} aria-describedby="basic-addon1" placeholder='Add a comment...' />
+                      <Button style={{width: '100px', backgroundColor: '#043f7c', border: 'none', height:'30px', margin: '0', position: "absolute", top: '50%', right:'10px', msTransform: 'translateY(-50%)', transform: 'translateY(-50%)', float: 'right' }} size='sm' variant="primary" disabled> <b>Post</b> </Button>{' '}
+                    </InputGroup>
                   </div>
                 </Card.Body>
               </Card>
@@ -141,8 +173,7 @@ class Post extends Component {
                         </Col>
                         <Col sm='5'>
                           <div className="Post-user-nickname" stylex={{marginLeft: '130px'}}>
-                            {/* <Button style={{fontSize: '11px'}} size='sm' variant="primary">Follow</Button>{' '} */}
-                            <Button style={{width: '70px', height:'30px'}} size='sm' variant="primary">follow</Button>{' '}
+                            <Button style={{width: '70px', backgroundColor: '#043f7c', border: 'none', height:'30px'}} size='sm' variant="primary">follow</Button>{' '}
                           </div>
                         </Col>
                       </div>
@@ -161,7 +192,7 @@ class Post extends Component {
                         </Col>
                         <Col sm='5'>
                           <div className="Post-user-nickname" stylex={{marginLeft: '130px'}}>
-                            <Button style={{width: '70px', height:'30px'}} size='sm' variant="primary">follow</Button>{' '}
+                            <Button style={{width: '70px', backgroundColor: '#043f7c', border: 'none', height:'30px'}} size='sm' variant="primary">follow</Button>{' '}
                           </div>
                         </Col>
                       </div>
@@ -180,7 +211,7 @@ class Post extends Component {
                         </Col>
                         <Col sm='5'>
                           <div className="Post-user-nickname" stylex={{marginLeft: '130px'}}>
-                            <Button style={{width: '70px', height:'30px'}} size='sm' variant="primary">follow</Button>{' '}
+                            <Button style={{width: '70px', backgroundColor: '#043f7c', border: 'none', height:'30px'}} size='sm' variant="primary">follow</Button>{' '}
                           </div>
                         </Col>
                       </div>

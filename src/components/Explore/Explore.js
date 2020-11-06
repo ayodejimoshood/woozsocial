@@ -2,9 +2,22 @@
 import React, { Component } from "react";
 import { Jumbotron, Container, Row, Col, Image, Button, Card } from 'react-bootstrap';
 import "./Post.css";
+import Carousel from 'react-bootstrap/Carousel';
+import ReactPlayer from 'react-player/lazy';
 import Avatar from '../../assets/img/avatar.jpg';
 import Slider from "../Slider";
 import Stories from "../Stories/Stories";
+import Footer from '../Footer'
+import thumb1 from '../../assets/img/thumb1.jpg'
+import thumb2 from '../../assets/img/thumb2.jpg'
+import thumb3 from '../../assets/img/thumb3.jpg'
+import thumb4 from '../../assets/img/thumb4.jpg'
+import thumb5 from '../../assets/img/thumb5.jpg'
+import thumb6 from '../../assets/img/thumb6.jpg'
+import thumb7 from '../../assets/img/thumb7.jpg'
+import thumb8 from '../../assets/img/thumb8.jpg'
+import thumb9 from '../../assets/img/thumb9.jpg'
+import thumb10 from '../../assets/img/thumb10.jpg'
 // import Slider from '../Slider';
 
 class Explore extends Component {
@@ -13,176 +26,105 @@ class Explore extends Component {
       
       
       // <Container stylex={{ width: '100%' }}>
-      <div>
+      <div className='mb-3'>
+        <br />
+        <br />
         {/* <Stories className='mb-3' /> */}
         <br />
-        <Col lg={12}>
+        <Col lg={12} className='mb-3'>
           
           <Row className="justify-content-md-center Wrapper" >
             <Col sm={4}>
-              <Card className='mb-3'>
-                <Card.Header style={{backgroundColor: 'white', padding: '0rem'}}>
-                  <div className="Post-user">
-                    <div className="Post-user-avatar">
-                      <img src={Avatar} alt="Fissycoolz" />
-                    </div>
-                    <div className="Post-user-nickname">
-                        <span>fissycoolz</span>
-                    </div>
+              <Card.Body className='mb-4' style={{padding: '0rem'}}>
+                <div className="Post-image">
+                  <div className="Post-image-bg" style={{width: '100%', heightxx: '50%'}}>
+                  <ReactPlayer playIcon url='https://player.vimeo.com/video/367990063?title=0&portrait=0&byline=0&autoplay=1' width='100%' />
+                  
+                    {/* <img alt="EndSARS" src={thumb1} /> */}
                   </div>
-                </Card.Header>
-                <Card.Body style={{padding: '0rem'}}>
-                  <div className="Post-image">
-                    <div className="Post-image-bg">
-                      <img alt="EndSARS" src="https://nairametrics.com/wp-content/uploads/2020/10/EndSARS-4.png" />
-                    </div>
+                </div>
+              </Card.Body>
+              <Card.Body classNamexx='mb-3' style={{padding: '0rem'}}>
+                <div className="Post-image">
+                  <div className="Post-image-bg">
+                    <img alt="EndSARS" src={thumb2} />
                   </div>
-                  <div className="Post-caption">
-                    <strong>fissycoolz</strong> Chop me I am your Palliative..... 💛 #justdoit
+                </div>
+              </Card.Body>
+            </Col>
+            <Col sm={8}>
+              <Card.Body className='mb-3' style={{padding: '0rem'}}>
+                <div className="Post-image">
+                  <div className="Post-image-bg">
+                  <Carousel>
+                        <Carousel.Item indicator='false'>
+                          <img alt="EndSARS" src={thumb10} />
+                        </Carousel.Item>
+                        <Carousel.Item indicator='false'>
+                          <img alt="EndSARS" src={thumb9} />
+                        </Carousel.Item>
+                      </Carousel>
                   </div>
-                </Card.Body>
-              </Card>
-              <Card className='mb-3'>
-                <Card.Header style={{backgroundColor: 'white', padding: '0rem'}}>
-                  <div className="Post-user">
-                    <div className="Post-user-avatar">
-                      <img src={Avatar} alt="Fissycoolz" />
-                    </div>
-                    <div className="Post-user-nickname">
-                        <span>fissycoolz</span>
-                    </div>
-                  </div>
-                </Card.Header>
-                <Card.Body style={{padding: '0rem'}}>
-                  <div className="Post-image">
-                    <div className="Post-image-bg">
-                      <img alt="Icon Living" src="https://images.pexels.com/photos/4343180/pexels-photo-4343180.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" />
-                    </div>
-                  </div>
-                  <div className="Post-caption">
-                    <strong>fissycoolz</strong> Chop me I am your Palliative..... 💛 #justdoit
-                  </div>
-                </Card.Body>
-              </Card>
-              <Card className='mb-3'>
-                <Card.Header style={{backgroundColor: 'white', padding: '0rem'}}>
-                  <div className="Post-user">
-                    <div className="Post-user-avatar">
-                      <img src={Avatar} alt="Fissycoolz" />
-                    </div>
-                    <div className="Post-user-nickname">
-                        <span>fissycoolz</span>
-                    </div>
-                  </div>
-                </Card.Header>
-                <Card.Body style={{padding: '0rem'}}>
-                  <div className="Post-image">
-                    <div className="Post-image-bg">
-                      <img alt="Icon Living" src="https://vod-progressive.akamaized.net/exp=1604245632~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F3294%2F18%2F466470641%2F2070632985.mp4~hmac=27f14a19d12107a90f0abaecd5e6e2ab7b069a18dcf7d8123d8c0674c1a9f04e/vimeo-prod-skyfire-std-us/01/3294/18/466470641/2070632985.mp4?filename=pexels-engin-akyurt-5559904.mp4" />
-                    </div>
-                  </div>
-                  <div className="Post-caption">
-                    <strong>fissycoolz</strong> Chop me I am your Palliative..... 💛 #justdoit
-                  </div>
-                </Card.Body>
-              </Card>
-              
+                </div>
+              </Card.Body>
             </Col>
             <Col sm={4}>
-              <Card className='mb-3'>
-                <Card.Header style={{backgroundColor: 'white', padding: '0rem'}}>
-                  <div className="Post-user">
-                    <div className="Post-user-avatar">
-                      <img src={Avatar} alt="Fissycoolz" />
-                    </div>
-                    <div className="Post-user-nickname">
-                        <span>fissycoolz</span>
-                    </div>
+              <Card.Body className='mb-3' style={{padding: '0rem'}}>
+                <div className="Post-image">
+                  <div className="Post-image-bg">
+                    <img alt="EndSARS" src={thumb3} />
                   </div>
-                </Card.Header>
-                <Card.Body style={{padding: '0rem'}}>
-                  <div className="Post-image">
-                    <div className="Post-image-bg">
-                      <img alt="EndSARS" src="https://nairametrics.com/wp-content/uploads/2020/10/EndSARS-4.png" />
-                    </div>
-                  </div>
-                  <div className="Post-caption">
-                    <strong>fissycoolz</strong> Chop me I am your Palliative..... 💛 #justdoit
-                  </div>
-                </Card.Body>
-              </Card>
-              <Card className='mb-3'>
-                <Card.Header style={{backgroundColor: 'white', padding: '0rem'}}>
-                  <div className="Post-user">
-                    <div className="Post-user-avatar">
-                      <img src={Avatar} alt="Fissycoolz" />
-                    </div>
-                    <div className="Post-user-nickname">
-                        <span>fissycoolz</span>
-                    </div>
-                  </div>
-                </Card.Header>
-                <Card.Body style={{padding: '0rem'}}>
-                  <div className="Post-image">
-                    <div className="Post-image-bg">
-                      <img alt="Icon Living" src="https://images.pexels.com/photos/4343180/pexels-photo-4343180.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" />
-                    </div>
-                  </div>
-                  <div className="Post-caption">
-                    <strong>fissycoolz</strong> Chop me I am your Palliative..... 💛 #justdoit
-                  </div>
-                </Card.Body>
-              </Card>
-              <Card className='mb-3'>
-                <Card.Header style={{backgroundColor: 'white', padding: '0rem'}}>
-                  <div className="Post-user">
-                    <div className="Post-user-avatar">
-                      <img src={Avatar} alt="Fissycoolz" />
-                    </div>
-                    <div className="Post-user-nickname">
-                        <span>fissycoolz</span>
-                    </div>
-                  </div>
-                </Card.Header>
-                <Card.Body style={{padding: '0rem'}}>
-                  <div className="Post-image">
-                    <div className="Post-image-bg">
-                      <img alt="Icon Living" src="https://vod-progressive.akamaized.net/exp=1604245632~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F3294%2F18%2F466470641%2F2070632985.mp4~hmac=27f14a19d12107a90f0abaecd5e6e2ab7b069a18dcf7d8123d8c0674c1a9f04e/vimeo-prod-skyfire-std-us/01/3294/18/466470641/2070632985.mp4?filename=pexels-engin-akyurt-5559904.mp4" />
-                    </div>
-                  </div>
-                  <div className="Post-caption">
-                    <strong>fissycoolz</strong> Chop me I am your Palliative..... 💛 #justdoit
-                  </div>
-                </Card.Body>
-              </Card>
-              
+                </div>
+              </Card.Body>
             </Col>
-            <Col sm={4} >
-              <Row style={{position: "fixed", margin: 'auto'}}>
-              <Col sm={12}>
-              <h6>Suggestions for you</h6>
-                <br />
-                <article className="Left-side" ref="Post">
-                  <header>
-                    <div className="Post-user">
-                      <div className="Post-user-avatar">
-                        <img src={Avatar} alt="Fissycoolz" />
-                      </div>
-                      <div className="Post-user-nickname">
-                        <span>fissycoolz</span>
-                      </div>
-                    </div>
-                  </header>
-                </article>
-              </Col>
-                
-              </Row>
-              
-              
+            <Col sm={4}>
+              <Card.Body className='mb-3' style={{padding: '0rem'}}>
+                <div className="Post-image">
+                  <div className="Post-image-bg">
+                    <img alt="EndSARS" src={thumb4} />
+                  </div>
+                </div>
+              </Card.Body>
             </Col>
-            
+            <Col sm={4}>
+              <Card.Body className='mb-3' style={{padding: '0rem'}}>
+                <div className="Post-image">
+                  <div className="Post-image-bg">
+                    <img alt="EndSARS" src={thumb5} />
+                  </div>
+                </div>
+              </Card.Body>
+            </Col>
+            <Col sm={4}>
+              <Card.Body className='mb-3' style={{padding: '0rem'}}>
+                <div className="Post-image">
+                  <div className="Post-image-bg">
+                    <img alt="EndSARS" src={thumb6} />
+                  </div>
+                </div>
+              </Card.Body>
+            </Col>
+            <Col sm={4}>
+              <Card.Body className='mb-3' style={{padding: '0rem'}}>
+                <div className="Post-image">
+                  <div className="Post-image-bg">
+                    <img alt="EndSARS" src={thumb7} />
+                  </div>
+                </div>
+              </Card.Body>
+            </Col>
+            <Col sm={4}>
+              <Card.Body className='mb-3' style={{padding: '0rem'}}>
+                <div className="Post-image">
+                  <div className="Post-image-bg">
+                    <img alt="EndSARS" src={thumb8} />
+                  </div>
+                </div>
+              </Card.Body>
+            </Col>            
           </Row>
         </Col>
+        <Footer />
         </div>
       // </Container>
       
